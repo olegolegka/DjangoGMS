@@ -1,0 +1,449 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+<div id="home">
+    <section id="hero-banner">
+        <div class="banner-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-warning">
+
+                        <h2>Станьте сильнее</h2>
+                        <p class="text-warning">Хотите стать сильнее чтобы рукой крошить бетон и сталь? А может хотите подкачать попу к лету? Тогда вы обратились по адресу</p>
+                        <a class="btn btn-danger btn-lg" href="{% url 'contact' %}">Начать сейчас</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#main-slider-->
+
+    <section id="services">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Что мы предлагаем</h2>
+                <p class="wow fadeInDown">Высокий профессионализм тренеров, самое новое оборудование, лучшие программы, индивидуальный подход</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-futbol-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Аэробика</h4>
+                                <p>Аэробика это форма физической нагрузки которая предполагает ритмичные движения с ростяжкой и силовыми упражнениями чтобы улучшить сразу всё.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-compass"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Кардио</h4>
+                                <p>Кардио - это разновидность упражнений которые повышают ваш сердечный ритм и удерживают его высоким на протяжении всего занятия.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-database"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Сушка</h4>
+                                <p>Комплекс упражнений направленный на сжигание подкожного жира и построения рельефной мускулатуры. Значительно улучшает ваше самочувствие и результативность на тренировках</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bar-chart"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Отдельные залы</h4>
+                                <p>Мы построили 5 отдельных залов, для разных типов активностей. Будь то силовые тренироки, танцы, растяжка, единоборства или групповые занятия. Чтобы вам было комфортно.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Опытные тренеры</h4>
+                                <p>Опытные тренеры помогут вам полюбить заниматься спортом, подберут идеальную программу, расскажут обо всех тонкостях философии спорта.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bullseye"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Работаем 24 часа</h4>
+                                <p>Идеальное время для занятий спортом это СЕЙЧАС, для того чтобы вы могли подобрать идеальный график под себя, мы работаем 24 часа в сутки 7 дней в неделю</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+                </div>
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/#services-->
+
+
+    <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Кто мы</h2>
+                <p class="wow fadeInDown">Все мы знаем что поход в спортивный зал делает вас здоровее и активнее, мы стараемся сделать все возможное чтобы вы получили максимум пользы и удовольствия от занятий спортом.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="{% static 'images/home.jpg' %}" alt="">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Наша фитнес студия</h3>
+                    <p>Фитнес студия. Наша студия оснащена всем необходимым оборудованием и различными приспособлениями для улучшения вашего здоровья и достижения максимальных результатов.</p>
+                    <ul class="listarrow">
+                        <li><i class="fa fa-angle-double-right"></i>Аэробика</li>
+                        <li><i class="fa fa-angle-double-right"></i>Кардио</li>
+                        <li><i class="fa fa-angle-double-right"></i>Силовые</li>
+                        <li><i class="fa fa-angle-double-right"></i>Специальные тренировки</li>
+                        <li><i class="fa fa-angle-double-right"></i>Жиросжигающие занятия</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#about-->
+
+    
+    <!--/#our-team-->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Галерея</h2>
+                <p class="wow fadeInDown">Мне надоело придумывать эти надписи</p>
+            </div>
+
+            <div class="text-center">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">Все занятия</a></li>
+                    <li><a href="#" data-filter=".designing">Кардио</a></li>
+                    <li><a href="#" data-filter=".mobile">Силовые</a></li>
+                    <li><a href="#" data-filter=".development">Аэробика</a></li>
+                </ul>
+                <!--/#portfolio-filter-->
+            </div>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/a.jpg ' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/a.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/b.jpg' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/b.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/c.jpg' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/c.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/d.jpg' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/d.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/e.jpg' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/e.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/f.jpg' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/f.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/g.jpg' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/g.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{% static 'images/portfolio/h.jpg' %}" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="{% static 'images/portfolio/h.jpg' %}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/#portfolio-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Цена</h2>
+                <p class="wow fadeInDown">Выберите оптимальный тарифный план под себя, наша ценовая полтика позволяет заниматься всем без исключений.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-success">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        15$
+                                    </span>
+                                    <span class="duration">
+                                        8 занятий
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Начальный
+                                </div>
+                            </li>
+                            <li><strong>8 занятий</strong> </li>
+                            <li><strong>Нет ограничений по времени</strong></li>
+                            <li><strong>Без тренера</strong></li>
+                            <li><strong>Бесплатные консультации</strong></li>
+                            <li><strong>Безлимитная вода</strong></li>
+                            <li><strong>24 часа</strong></li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="{% url 'contact' %}">Связаться сейчас</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-primary">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <ul class="pricing featured">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        20$
+                                    </span>
+                                    <span class="duration">
+                                        12 занятий
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Стандартный
+                                </div>
+                            </li>
+                            <li><strong>8 занятий</strong> </li>
+                            <li><strong>Нет ограничений по времени</strong></li>
+                            <li><strong>Без тренера</strong></li>
+                            <li><strong>Бесплатные консультации</strong></li>
+                            <li><strong>Безлимитная вода</strong></li>
+                            <li><strong>24 часа</strong></li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="{% url 'contact' %}">Связаться сейчас</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-danger">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        30$
+                                    </span>
+                                    <span class="duration">
+                                        Безлимитный
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Безлимит
+                                </div>
+                            </li>
+                          <li><strong>Безлимитный абонимент</strong> </li>
+                            <li><strong>Нет ограничений по времени</strong></li>
+                            <li><strong>Без тренера</strong></li>
+                            <li><strong>Бесплатные консультации</strong></li>
+                            <li><strong>Безлимитная вода</strong></li>
+                            <li><strong>24 часа</strong></li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="{% url 'contact' %}">Связаться сейчас</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-warning">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                       40$
+                                    </span>
+                                    <span class="duration">
+                                        индивидуальный тренер(12 занятий)
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Голд
+                                </div>
+                            </li>
+                            <li><strong>Безлимитный абонимент</strong> </li>
+                            <li><strong>Нет ограничений по времени</strong></li>
+                            <li><strong>Персональный тренер</strong></li>
+                            <li><strong>Бесплатные консультации</strong></li>
+                            <li><strong>Безлимитная вода</strong></li>
+                            <li><strong>24 часа</strong></li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="{% url 'contact' %}">Связаться сейчас</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#pricing-->
+
+
+
+    <section id="business-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Подумайте о своём здоровье</h2>
+                <p class="wow fadeInDown">Спорт может сделать вас счастливе. Спорт сделает вас стройнее.Спорт необходим вашим мышцам и костям. Спорт повышает ваш уровень энергии. Спорт уменьшает риск заболеваний. Спорт поддерживает вашу кожу в тонусе . Спорт улучшает ваше здоровье, ум и память</p>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="business-stats" data-digit="1000" data-duration="1000"></div>
+                        <strong>Клиенты</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="business-stats" data-digit="10" data-duration="1000"></div>
+                        <strong>Тренеры</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="business-stats" data-digit="16" data-duration="1000"></div>
+                        <strong>Программ</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="business-stats" data-digit="40" data-duration="1000"></div>
+                        <strong>Успешных спортсменов</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#business-stats-->
+
+
+    
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="text-white">Copyright @2021 | Gym of Alek | All Rights Reserved</p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a  href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}

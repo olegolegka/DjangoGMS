@@ -1,0 +1,59 @@
+{% extends 'navigation.html' %}
+{% block body %}
+{% load static %}
+{% ifequal error "no" %}
+<script>
+    alert('Аутентификация выполнена');
+    window.location=("{% url 'home' %}")
+</script>
+{% endifequal %}
+{% ifequal error "yes" %}
+<script>
+    alert('Неверные имя пользователя или пароль, попробуйте еще');
+</script>
+{% endifequal %}
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-t-80 ">
+            <form class="login100-form validate-form pt-0" action="" method="post">
+                {% csrf_token %}
+                
+
+                <span class="login100-form-title p-t-20 p-b-45 mt-5 mb-4">
+                    Вход
+                </span>
+
+                <div class="wrap-input100 validate-input m-b-10 mb-3" data-validate = "Username is required">
+                    <input class="input100" type="text" name="uname" placeholder="Имя пользователя">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-10 mb-3" data-validate = "Password is required">
+                    <input class="input100" type="password" name="pwd" placeholder="Пароль">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                </div>
+
+                <div class="container-login100-form-btn p-t-10">
+                    <button class="login100-form-btn">
+                       Логин
+                    </button>
+                </div>
+
+                <div class="text-center w-full p-t-25 p-b-230">
+                    <a href="#" class="txt1">
+                        Забыли логин или пароль?Зря...
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

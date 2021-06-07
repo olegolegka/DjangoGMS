@@ -1,0 +1,66 @@
+{% extends 'navigation.html' %}
+{% block body %}
+<div class="container" style="margin-top: 60px;">
+    <h3 class="text-center text-primary font-weight-bold">Добавить тренера</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for=""><b>Имя</b></label>
+        <input type="text" name="name" class="form-control">
+        <label for=""><b>Телефон</b></label>
+        <input type="tel" name="contact" class="form-control">
+        <label for=""><b>Email</b></label>
+        <input type="email" name="emailid" class="form-control">
+        <label for=""><b>Стаж</b></label>
+        <input type="text" name="age" class="form-control">
+        <label for=""><b>Пол</b></label>
+        <input type="radio" name="gender" value="Мужчина">Мужчина
+        <input type="radio" name="gender" value="Женщина">Женщина
+        <br>
+        <input type="submit" value="Добавить" class="btn btn-primary">
+    </form>
+</div>
+
+{% ifequal error "no" %}
+<script>
+    alert('Запись внесена успешно');
+    window.location=("{% url 'view_enquiry' %}")
+</script>
+{% endifequal %}
+{% ifequal error "yes" %}
+<script>
+    alert('Что-то пошло не так, попробуйте снова');
+</script>
+{% endifequal %}
+
+{% endblock%}
+{% block css %}
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
+{% endblock %}
+{% block footer %}
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="text-white">Copyright @2021 | Gym of Alek | All Rights Reserved</p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a  href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock%}

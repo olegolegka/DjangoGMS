@@ -1,0 +1,57 @@
+{% extends 'navigation.html' %}
+{% block body %}
+<div class="container" style="margin-top: 60px;">
+    <h3 class="text-center text-primary font-weight-bold">Ваш профиль</h3>
+    <table id="example" class="table table-hover display">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Email</th>
+                <th>Дата окончания абонемента</th>
+                <th>План</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{user.member.name}}</td>
+                <td>{{user.member.emailid}}</td>
+                <td>{{ user.member.expiredate }}</td>
+                 <td>{{user.member.plan}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
+{% block css %}
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
+{% endblock %}
+{% block footer %}
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="text-white">Copyright @2021 | Gym of Alek | All Rights Reserved</p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a  href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock%}
