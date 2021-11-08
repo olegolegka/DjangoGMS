@@ -1,4 +1,5 @@
 # DjangoGMS
+Deployed on Heroku: https://gymmanagesystem.herokuapp.com/
 MAMP needed or else apache and sql server
 How to run?
 1.in settings.py change database data then:
